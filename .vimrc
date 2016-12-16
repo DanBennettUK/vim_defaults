@@ -173,6 +173,7 @@ set hlsearch
 set spell spelllang=en_gb
 set completefunc=emoji#complete
 set laststatus=2
+set ff=unix
 
 " Uncomment below to prevent 'tilde backup files' (eg. myfile.txt~) from being created
 set nobackup
