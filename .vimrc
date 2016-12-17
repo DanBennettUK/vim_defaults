@@ -1,4 +1,4 @@
-source ~/vimrc_example.vim
+"source ~/vimrc_example.vim
 "source $VIMRUNTIME/mswin.vim
 "behave mswin
 
@@ -179,7 +179,8 @@ set ff=unix
 set nobackup
 
 " Uncomment below to cause 'tilde backup files' to be created in a different dir so as not to clutter up the current file's directory (probably a better idea than disabling them altogether)
-set backupdir=C:\Windows\Temp
+"set backupdir=C:\Windows\Temp "Windows
+set backupdir=/tmp "Linux
 
 " Uncomment below to disable 'swap files' (eg. .myfile.txt.swp) from being created
 set noswapfile
