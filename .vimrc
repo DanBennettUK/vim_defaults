@@ -1,6 +1,6 @@
-"source $VIMRUNTIME/vimrc_example.vim
-"source $VIMRUNTIME/mswin.vim
-"behave mswin
+source $VIMRUNTIME/vimrc_example.vim
+source $VIMRUNTIME/mswin.vim
+behave mswin
 
 "set diffexpr=MyDiff()
 "function MyDiff()
@@ -186,8 +186,8 @@ set noerrorbells         " don't beep
 set nobackup
 
 " Uncomment below to cause 'tilde backup files' to be created in a different dir so as not to clutter up the current file's directory (probably a better idea than disabling them altogether)
-"set backupdir=C:\Windows\Temp "Windows
-set backupdir=/tmp "Linux
+set backupdir=C:\Windows\Temp "Windows
+"set backupdir=/tmp "Linux
 
 " Uncomment below to disable 'swap files' (eg. .myfile.txt.swp) from being created
 set noswapfile
@@ -197,6 +197,10 @@ let g:vim_markdown_frontmatter = 1
 let g:auto_save = 0
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme='raven'
+let g:indent_guides_guide_size = 1
+let g:indent_guides_color_change_percent = 3
+let g:indent_guides_enable_on_vim_startup = 1
+let g:table_mode_corner="|"
 
 nmap <F3> i<C-R>=strftime("#### %H:%M")<CR><Return><Return>
 imap <F3> <C-R>=strftime("#### %H:%M")<CR><Return><Return>
