@@ -1,6 +1,6 @@
-"source ~/vimrc_example.vim
-"source $VIMRUNTIME/mswin.vim
-"behave mswin
+source $VIMRUNTIME/vimrc_example.vim
+source $VIMRUNTIME/mswin.vim
+behave mswin
 
 "set diffexpr=MyDiff()
 "function MyDiff()
@@ -163,28 +163,33 @@ set tabstop=4
 set sessionoptions-=options
 syntax enable
 set background=dark
-colorscheme papercolor
-set guifont=DejaVu_Sans_Mono:h10
+colorscheme PaperColor
+set guifont=Lucida_Sans_Typewriter:h10
+set conceallevel=2              " e.g. Makes links appear as just text instead of the markdown format unless hovered over
 set wrap
 set linebreak
 set nolist
 set encoding=UTF-8
-set hlsearch
+set hlsearch " highlight search matches
+set incsearch " highlight search matches as I type
 set spell spelllang=en_gb
 set completefunc=emoji#complete
 set laststatus=2
 set ff=unix
+set history=1000         " remember more commands and search history
+set undolevels=1000      " use many muchos levels of undo
+set title                " change the terminal's title
+set visualbell           " don't beep
+set noerrorbells         " don't beep
 
 " Uncomment below to prevent 'tilde backup files' (eg. myfile.txt~) from being created
 set nobackup
 
 " Uncomment below to cause 'tilde backup files' to be created in a different dir so as not to clutter up the current file's directory (probably a better idea than disabling them altogether)
-"set backupdir=C:\Windows\Temp "Windows
-set backupdir=/tmp "Linux
+set backupdir=C:\Windows\Temp
 
 " Uncomment below to disable 'swap files' (eg. .myfile.txt.swp) from being created
 set noswapfile
-
 
 let g:vim_markdown_folding_disabled = 1
 let g:vim_markdown_frontmatter = 1
