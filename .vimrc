@@ -171,9 +171,10 @@ set tabstop=4
 set sessionoptions-=options
 syntax enable
 set background=dark
-colorscheme PaperColor
+"colorscheme PaperColor
+colorscheme molokai
 set guifont=Lucida_Sans_Typewriter:h10
-"set conceallevel=2              " e.g. Makes links appear as just text instead of the markdown format unless hovered over
+set conceallevel=2              " e.g. Makes links appear as just text instead of the markdown format unless hovered over
 set wrap
 set linebreak
 set nolist
@@ -200,9 +201,15 @@ set backupdir=C:\Windows\Temp "Windows
 " Uncomment below to disable 'swap files' (eg. .myfile.txt.swp) from being created
 set noswapfile
 
+" Don't save hidden and unloaded buffers in sessions.
+set sessionoptions-=buffers
+
+" Don't persist options and mappings because it can corrupt sessions.
+set sessionoptions-=options
+
 let g:vim_markdown_folding_disabled = 1
 let g:vim_markdown_frontmatter = 1 "highlight YAML
-let g:vim_markdown_conceal = 1 "conceal markdown items
+"let g:vim_markdown_conceal = 1 "conceal markdown items
 let g:auto_save = 0
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme='raven'
@@ -210,6 +217,8 @@ let g:indent_guides_guide_size = 1
 let g:indent_guides_color_change_percent = 3
 let g:indent_guides_enable_on_vim_startup = 1
 let g:table_mode_corner="|"
+let g:session_autosave = 'no'
+
 
 nmap <F3> i<C-R>=strftime("#### %H:%M")<CR><Return><Return>
 imap <F3> <C-R>=strftime("#### %H:%M")<CR><Return><Return>
