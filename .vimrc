@@ -150,6 +150,14 @@ map <F11> <Esc>:call ToggleGUICruft()<cr>
 " by default, hide gui menus
 set guioptions=i
 
+set nocompatible
+filetype plugin on
+augroup litecorrect
+    autocmd!
+    autocmd FileType markdown,mkd call litecorrect#init()
+    autocmd FileType textile call litecorrect#init()
+augroup END
+
 
 " whitespace
 set autoindent                  " keep indenting on <CR>
@@ -165,7 +173,7 @@ syntax enable
 set background=dark
 colorscheme PaperColor
 set guifont=Lucida_Sans_Typewriter:h10
-set conceallevel=2              " e.g. Makes links appear as just text instead of the markdown format unless hovered over
+"set conceallevel=2              " e.g. Makes links appear as just text instead of the markdown format unless hovered over
 set wrap
 set linebreak
 set nolist
@@ -193,7 +201,8 @@ set backupdir=C:\Windows\Temp "Windows
 set noswapfile
 
 let g:vim_markdown_folding_disabled = 1
-let g:vim_markdown_frontmatter = 1
+let g:vim_markdown_frontmatter = 1 "highlight YAML
+let g:vim_markdown_conceal = 1 "conceal markdown items
 let g:auto_save = 0
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme='raven'
