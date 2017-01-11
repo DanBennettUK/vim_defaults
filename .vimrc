@@ -219,10 +219,11 @@ let g:indent_guides_enable_on_vim_startup = 1
 let g:table_mode_corner="|"
 let g:session_autosave = 'no'
 
-
+" Insert current time plus Header4
 nmap <F3> i<C-R>=strftime("#### %H:%M")<CR><Return><Return>
 imap <F3> <C-R>=strftime("#### %H:%M")<CR><Return><Return>
 
+" Insert horizontal line
 nmap <F4> i---<Return><Return>
 imap <F4> ---<Return><Return>
 
