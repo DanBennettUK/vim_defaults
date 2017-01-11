@@ -223,5 +223,9 @@ let g:session_autosave = 'no'
 nmap <F3> i<C-R>=strftime("#### %H:%M")<CR><Return><Return>
 imap <F3> <C-R>=strftime("#### %H:%M")<CR><Return><Return>
 
-nmap <F4> i<C-R>---<CR><Return><Return>
-imap <F4> <C-R>---<CR><Return><Return>
+nmap <F4> i---<Return><Return>
+imap <F4> ---<Return><Return>
+
+"Convert [ticket:number] to helpspot URL
+nmap <silent><F2> :%s#\[ticket:\(\d\+\)\]#[\#\1](https://help.howtomoodle.com/admin.php?pg=request\&reqid=\1)#<CR>
+imap <F2> <Esc>:%s#\[ticket:\(\d\+\)\]#[\#\1](https://help.howtomoodle.com/admin.php?pg=request\&reqid=\1)#<CR>gi
