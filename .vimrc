@@ -188,7 +188,9 @@ let g:indent_guides_color_change_percent = 3
 let g:indent_guides_enable_on_vim_startup = 1
 let g:table_mode_corner="|"
 let g:session_autosave = 'no'
-
+let g:session_directory = 'C:\Users\DanBennett\Vim\vimfiles\sessions' "Windows
+"let g:session_directory = '~/.vim/sessions' "Linux
+"
 " Insert current time plus Header4
 nmap <F3> i<C-R>=strftime("#### %H:%M")<CR><Return><Return>
 imap <F3> <C-R>=strftime("#### %H:%M")<CR><Return><Return>
