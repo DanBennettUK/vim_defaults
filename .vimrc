@@ -141,8 +141,8 @@ set tabstop=4
 set sessionoptions-=options
 syntax enable
 set background=dark
-"colorscheme PaperColor
-colorscheme molokai
+colorscheme PaperColor
+"colorscheme hybrid
 set guifont=Lucida_Sans_Typewriter:h10
 set conceallevel=2              " e.g. Makes links appear as just text instead of the markdown format unless hovered over
 set wrap
@@ -190,6 +190,7 @@ let g:table_mode_corner="|"
 let g:session_autosave = 'no'
 let g:session_directory = 'C:\Users\DanBennett\Vim\vimfiles\sessions' "Windows
 "let g:session_directory = '~/.vim/sessions' "Linux
+
 
 " Insert current time plus Header4
 nmap <F3> i<C-R>=strftime("#### %H:%M")<CR><Return><Return>
