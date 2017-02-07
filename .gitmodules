@@ -43,3 +43,6 @@
 [submodule "bundle/vim-table-mode"]
 	path = bundle/vim-table-mode
 	url = https://github.com/dhruvasagar/vim-table-mode.git
+[submodule "bundle/vim-quicktask"]
+	path = bundle/vim-quicktask
+	url = https://github.com/aaronbieber/vim-quicktask.git
