@@ -141,8 +141,7 @@ set tabstop=4
 set sessionoptions-=options
 syntax enable
 set background=dark
-colorscheme PaperColor
-"colorscheme hybrid
+colorscheme molokai
 set guifont=Lucida_Sans_Typewriter:h10
 set conceallevel=2              " e.g. Makes links appear as just text instead of the markdown format unless hovered over
 set wrap
