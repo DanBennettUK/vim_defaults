@@ -136,7 +136,7 @@ set softtabstop=4               " one tab = four spaces (tab key)
 set expandtab                   " never use hard tabs
 set shiftround                  " only indent to multiples of shiftwidth
 set smarttab                    " DTRT when shiftwidth/softtabstop diverge
-set fileformats=unix,dos        " unix linebreaks in new files please
+set fileformats=unix            " unix linebreaks in new files please
 set tabstop=4
 set sessionoptions-=options
 syntax enable
@@ -190,7 +190,7 @@ let g:table_mode_corner="|"
 let g:session_autosave = 'no'
 let g:session_directory = 'C:\Users\DanBennett\Vim\vimfiles\sessions' "Windows
 "let g:session_directory = '~/.vim/sessions' "Linux
-"
+
 " Insert current time plus Header4
 nmap <F3> i<C-R>=strftime("#### %H:%M")<CR><Return><Return>
 imap <F3> <C-R>=strftime("#### %H:%M")<CR><Return><Return>
