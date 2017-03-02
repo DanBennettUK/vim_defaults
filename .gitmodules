@@ -46,3 +46,6 @@
 [submodule "bundle/vim-quicktask"]
 	path = bundle/vim-quicktask
 	url = https://github.com/aaronbieber/vim-quicktask.git
+[submodule "bundle/onedark.vim"]
+	path = bundle/onedark.vim
+	url = git@github.com:joshdick/onedark.vim.git

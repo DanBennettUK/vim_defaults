@@ -24,11 +24,11 @@ if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
   let s:wipebuf = bufnr('%')
 endif
 set shortmess=aoO
-badd +3961 \\10.2.10.20\www\logbook\_posts\2017-01-01-logbook_2017.md
-badd +1 \\10.2.10.20\www\logbook\_posts\2017-01-01-todolist.md
+badd +3961 \\10.2.10.30\www\logbook\_posts\2017-01-01-logbook_2017.md
+badd +1 \\10.2.10.30\www\logbook\_posts\2017-01-01-todolist.md
 argglobal
 silent! argdel *
-edit \\10.2.10.20\www\logbook\_posts\2017-01-01-logbook_2017.md
+edit \\10.2.10.30\www\logbook\_posts\2017-01-01-logbook_2017.md
 set splitbelow splitright
 set nosplitbelow
 set nosplitright
@@ -50,8 +50,8 @@ exe s:l
 normal! zt
 7711
 normal! 0
-lcd \\10.2.10.20\www\logbook
-tabedit \\10.2.10.20\www\logbook\_posts\2017-01-01-todolist.md
+lcd \\10.2.10.30\www\logbook
+tabedit \\10.2.10.30\www\logbook\_posts\2017-01-01-todolist.md
 set splitbelow splitright
 set nosplitbelow
 set nosplitright
@@ -72,7 +72,7 @@ exe s:l
 normal! zt
 39
 normal! 026|
-lcd \\10.2.10.20\www\logbook
+lcd \\10.2.10.30\www\logbook
 tabnext 1
 if exists('s:wipebuf')
 "   silent exe 'bwipe ' . s:wipebuf
