@@ -202,3 +202,6 @@ imap <F4> ---<Return><Return>
 "Convert [ticket:number] to helpspot URL
 nmap <silent><F2> :%s#\[ticket:\(\d\+\)\]#[\#\1](https://help.howtomoodle.com/admin.php?pg=request\&reqid=\1)#<CR>
 imap <F2> <Esc>:%s#\[ticket:\(\d\+\)\]#[\#\1](https://help.howtomoodle.com/admin.php?pg=request\&reqid=\1)#<CR>gi
+
+"Ctrl + L to remove highlighting
+noremap <c-l> :nohl<cr>
