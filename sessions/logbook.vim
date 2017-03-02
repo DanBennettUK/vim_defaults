@@ -1,6 +1,6 @@
 " ~\Vim\vimfiles\sessions\logbook.vim:
 " Vim session script.
-" Created by session.vim 2.13.1 on 14 February 2017 at 17:31:31.
+" Created by session.vim 2.13.1 on 02 March 2017 at 13:44:56.
 " Open this file in Vim and run :source % to restore your session.
 
 set guioptions=i
@@ -44,12 +44,12 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-let s:l = 7711 - ((38 * winheight(0) + 21) / 43)
+let s:l = 570 - ((17 * winheight(0) + 21) / 43)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-7711
-normal! 0
+570
+normal! 020|
 lcd \\10.2.10.20\www\logbook
 tabedit \\10.2.10.20\www\logbook\_posts\2017-01-01-todolist.md
 set splitbelow splitright
@@ -66,12 +66,12 @@ setlocal fdl=2
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 39 - ((20 * winheight(0) + 21) / 43)
+let s:l = 93 - ((18 * winheight(0) + 21) / 43)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-39
-normal! 026|
+93
+normal! 0
 lcd \\10.2.10.20\www\logbook
 tabnext 1
 if exists('s:wipebuf')

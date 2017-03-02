@@ -49,3 +49,6 @@
 [submodule "bundle/onedark.vim"]
 	path = bundle/onedark.vim
 	url = git@github.com:joshdick/onedark.vim.git
+[submodule "bundle/vim-wordy"]
+	path = bundle/vim-wordy
+	url = https://github.com/reedes/vim-wordy.git
