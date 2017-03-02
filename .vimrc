@@ -1,6 +1,6 @@
-source $VIMRUNTIME/vimrc_example.vim
-source $VIMRUNTIME/mswin.vim
-behave mswin
+"source $VIMRUNTIME/vimrc_example.vim
+"source $VIMRUNTIME/mswin.vim
+"behave mswin
 
 "Personal Settings.
 "More to be added soon.
@@ -124,7 +124,7 @@ set nocompatible
 filetype plugin on
 augroup litecorrect
     autocmd!
-    autocmd FileType markdown,mkd call litecorrect#init()
+    autocmd FileType markdown,mkd,md call litecorrect#init()
     autocmd FileType textile call litecorrect#init()
 augroup END
 
@@ -147,6 +147,8 @@ set conceallevel=2              " e.g. Makes links appear as just text instead o
 set wrap
 set linebreak
 set nolist
+set textwidth=0
+set wrapmargin=0
 set encoding=UTF-8
 set hlsearch " highlight search matches
 set incsearch " highlight search matches as I type
@@ -164,8 +166,8 @@ set noerrorbells         " don't beep
 set nobackup
 
 " Uncomment below to cause 'tilde backup files' to be created in a different dir so as not to clutter up the current file's directory (probably a better idea than disabling them altogether)
-set backupdir=C:\Windows\Temp "Windows
-"set backupdir=/tmp "Linux
+"set backupdir=C:\Windows\Temp "Windows
+set backupdir=/tmp "Linux
 
 " Uncomment below to disable 'swap files' (eg. .myfile.txt.swp) from being created
 set noswapfile
@@ -187,8 +189,8 @@ let g:indent_guides_color_change_percent = 3
 let g:indent_guides_enable_on_vim_startup = 1
 let g:table_mode_corner="|"
 let g:session_autosave = 'no'
-let g:session_directory = 'C:\Users\DanBennett\Vim\vimfiles\sessions' "Windows
-"let g:session_directory = '~/.vim/sessions' "Linux
+"let g:session_directory = 'C:\Users\DanBennett\Vim\vimfiles\sessions' "Windows
+let g:session_directory = '~/.vim/sessions' "Linux
 
 
 " Insert current time plus Header4
