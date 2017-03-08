@@ -52,3 +52,9 @@
 [submodule "bundle/vim-wordy"]
 	path = bundle/vim-wordy
 	url = https://github.com/reedes/vim-wordy.git
+[submodule "vim-bracketed-paste"]
+	path = vim-bracketed-paste
+	url = https://github.com/ConradIrwin/vim-bracketed-paste.git
+[submodule "bundle/vim-bracketed-paste"]
+	path = bundle/vim-bracketed-paste
+	url = https://github.com/ConradIrwin/vim-bracketed-paste.git
