@@ -191,7 +191,8 @@ let g:table_mode_corner="|"
 let g:session_autosave = 'no'
 "let g:session_directory = 'C:\Users\DanBennett\Vim\vimfiles\sessions' "Windows
 let g:session_directory = '~/.vim/sessions' "Linux
-
+" Notes suffix
+:let g:notes_suffix = '.md'
 
 " Insert current time plus Header4
 nmap <F3> i<C-R>=strftime("#### %H:%M")<CR><Return><Return>
