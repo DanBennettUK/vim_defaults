@@ -1,6 +1,6 @@
 " ~/.vim/sessions/logbook2.vim:
 " Vim session script.
-" Created by session.vim 2.13.1 on 02 March 2017 at 14:03:10.
+" Created by session.vim 2.13.1 on 21 March 2017 at 11:14:00.
 " Open this file in Vim and run :source % to restore your session.
 
 if exists('g:syntax_on') != 1 | syntax on | endif
@@ -22,8 +22,8 @@ if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
   let s:wipebuf = bufnr('%')
 endif
 set shortmess=aoO
-badd +0 /var/www/logbook/_posts/2017-01-01-logbook_2017.md
-badd +0 /var/www/logbook/_posts/2017-01-01-todolist.md
+badd +1 /var/www/logbook/_posts/2017-01-01-logbook_2017.md
+badd +0 ~/.vim/misc/notes/user/TODOs.md
 silent! argdel *
 edit /var/www/logbook/_posts/2017-01-01-logbook_2017.md
 set splitbelow splitright
@@ -41,13 +41,13 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-let s:l = 1 - ((0 * winheight(0) + 16) / 32)
+let s:l = 1 - ((0 * winheight(0) + 18) / 37)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
 1
 normal! 0
-tabedit /var/www/logbook/_posts/2017-01-01-todolist.md
+tabedit ~/.vim/misc/notes/user/TODOs.md
 set splitbelow splitright
 set nosplitbelow
 set nosplitright
@@ -55,14 +55,14 @@ wincmd t
 set winheight=1 winwidth=1
 argglobal
 setlocal fdm=expr
-setlocal fde=QTFoldLevel(v:lnum)
+setlocal fde=xolox#notes#foldexpr()
 setlocal fmr={{{,}}}
 setlocal fdi=#
 setlocal fdl=0
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 1 - ((0 * winheight(0) + 25) / 51)
+let s:l = 1 - ((0 * winheight(0) + 18) / 37)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
